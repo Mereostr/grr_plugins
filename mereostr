@@ -25,4 +25,3 @@
 $VMName = Read-Host "input Virtual Machine name"
 $VHDFiles = Get-VM -VMName $VMName | Select-Object VMId | Get-VHD | Select-Object Path | Format-List
 
-
